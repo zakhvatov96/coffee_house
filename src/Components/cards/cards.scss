@@ -1,0 +1,38 @@
+.cards {
+	margin-top: 39px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	&__item {		
+		&-our-best {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			border-radius: 8px;
+			width: 220px;
+			min-height: 240px;
+			background: rgba(255, 255, 255, 0.65);
+			padding: 22px;
+			text-decoration: none;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			&-name {
+				margin-top: 14px;
+				text-align: center;
+				font-weight: 400;
+				font-size: 13px;
+				color: #000;
+			}
+			&-price {
+				width: 47px;
+				height: 21px;
+				position: absolute;
+				right: 22px;
+				bottom: 22px;
+			}
+		}
+	}
+
+}
