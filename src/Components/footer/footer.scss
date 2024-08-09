@@ -1,0 +1,13 @@
+.footer {
+	min-height: 150px;
+	position: relative;
+	padding: 52px 0 20px 0;
+	.nav {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.divider {
+		margin-top: 50px;
+	}
+}

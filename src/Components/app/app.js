@@ -2,6 +2,7 @@ import {Component} from 'react';
 import Promo from '../promo/promo';
 import AboutUs from '../about-us/about-us';
 import OurBest from '../our-best/our-best';
+import Footer from '../footer/footer';
 import solimo from '../../images/solimo.png';
 import presto from '../../images/presto.png';
 import aromistico from '../../images/aromistico.png';
@@ -29,6 +30,7 @@ class App extends Component {
 				<Promo />
 				<AboutUs />
 				<OurBest data={data} />
+				<Footer />
 			</div>
 		)
 	}

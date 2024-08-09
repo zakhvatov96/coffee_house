@@ -1,10 +1,17 @@
 import './nav.scss';
-import img from '../../images/pseudo_beans.svg'
+import imgWhite from '../../images/pseudo_beans_white.svg';
+import imgBlack from '../../images/pseudo_beans_black.svg';
 
-const Nav = (props) => {
+const Nav = ({color}) => {
+	let className = 'nav';
+	let src = imgWhite;
+	if (color === 'black') {
+		className += ' nav-black'
+		src = imgBlack;
+	}
 	return (
-		<nav className="nav">
-			<img className='nav__img' src={img} alt="beans" />
+		<nav className={className}>
+			<img className='nav__img' src={src} alt="beans" />
 			<ul className="nav__list">
 				<li><a href="#">Coffee house</a></li>
 				<li><a href="#">Our coffee</a></li>
