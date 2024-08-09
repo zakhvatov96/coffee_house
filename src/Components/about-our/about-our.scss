@@ -1,0 +1,22 @@
+.about-our {
+	padding-top: 70px;
+	&__wrapper {
+		width: 697px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text {
+		width: 346px;
+		text-align: center;
+		font-weight: 400;
+		font-size: 14px;
+		color: #000
+	}
+	&__divider {
+		margin: 0 auto;
+		margin-top: 60px;
+		border: 1px solid #000;
+		width: 240px;
+		height: 0px;
+	}
+}

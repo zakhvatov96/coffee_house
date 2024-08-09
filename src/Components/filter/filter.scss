@@ -1,0 +1,64 @@
+.filter {
+	margin: 0 auto;
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	width: 693px;
+	&__search {
+		&-label {
+			margin-right: 19px;
+			font-weight: 400;
+			font-size: 14px;
+			text-align: center;
+			color: #000;
+		}
+		&-input {
+			border-radius: 4px;
+			padding: 5px;
+			border: none;
+			width: 180px;
+			height: 30px;
+			box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+			background: #fff;
+			font-weight: 400;
+			font-size: 12px;
+			text-align: center;
+			color: rgba(0, 0, 0, 0.5);		
+		}
+	}
+	&__filter {
+		width: 326px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-label {
+			font-weight: 400;
+			font-size: 14px;
+			text-align: center;
+			color: #000;
+		}
+		&-buttons {
+			min-width: 235px;
+			display: flex;
+			justify-content: space-between;
+		}
+		&-btn {
+			border-radius: 4px 0 0 4px;
+			width: 75px;
+			height: 30px;
+			box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
+			background: #fff;
+			border: none;
+			font-weight: 400;
+			font-size: 12px;
+			text-align: center;
+			color: #000;
+			cursor: pointer;
+			&-active {
+				color: #fff;
+				background: #000;
+			}
+		}
+
+	}
+}

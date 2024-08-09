@@ -3,6 +3,9 @@ import Promo from '../promo/promo';
 import AboutUs from '../about-us/about-us';
 import OurBest from '../our-best/our-best';
 import Footer from '../footer/footer';
+import Header from '../header/header';
+import AboutOur from '../about-our/about-our';
+import Filter from '../filter/filter';
 import solimo from '../../images/solimo.png';
 import presto from '../../images/presto.png';
 import aromistico from '../../images/aromistico.png';
@@ -20,17 +23,21 @@ class App extends Component {
 					{src: presto, name: 'Presto Coffee Beans 1 kg', country: null, price: '15.99$', mod: true, id: 1},
 					{src: aromistico, name: 'AROMISTICO Coffee 1 kg', country: null, price: '6.99$', mod: true, id: 2}
 				]
-			}
+			},
+			filter: ''
 		}
 	}
 	render() {
-		const {data} = this.state;
+		const {data, filter} = this.state;
 		return (
 			<div className="app">
-				<Promo />
+				{/* <Promo />
 				<AboutUs />
 				<OurBest data={data} />
-				<Footer />
+				<Footer /> */}
+				<Header />
+				<AboutOur />
+				<Filter active={filter} />
 			</div>
 		)
 	}
