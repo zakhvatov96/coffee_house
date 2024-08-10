@@ -2,37 +2,57 @@
 	margin-top: 39px;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	&__item {		
-		&-our-best {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			border-radius: 8px;
-			width: 220px;
-			min-height: 240px;
+	&__item {
+		width: 220px;
+		min-height: 240px;
+		position: relative;
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		border-radius: 8px;
+		padding: 22px;
+		text-decoration: none;
+		
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		&-our-best {		
 			background: rgba(255, 255, 255, 0.65);
-			padding: 22px;
-			text-decoration: none;
-			img {
-				display: block;
-				margin: 0 auto;
-			}
-			&-name {
-				margin-top: 14px;
-				text-align: center;
-				font-weight: 400;
-				font-size: 13px;
-				color: #000;
-			}
-			&-price {
-				width: 47px;
-				height: 21px;
-				position: absolute;
-				right: 22px;
-				bottom: 22px;
-			}
+
+		}
+		&-our-beans {
+			box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.25);
+			background: #fff;
 		}
 	}
 
+}
+
+.cards__item-name {
+	margin-top: 14px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 13px;
+	color: #000;
+}
+
+.cards__item-price {
+	margin-top: 14px;
+	height: 21px;
+	text-align: right;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+
+.cards__item-country {
+	margin-top: 14px;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: right;
+	color: #000;
 }

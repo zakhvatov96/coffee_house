@@ -9,7 +9,7 @@ const OurBest = ({data}) => {
 				<Title text="Our best" 
 					   color="black"
 					   subtitle={true} />
-				<Cards data={data} />
+				<Cards ourBest={data} cardsType='ourBest'/>
 			</div>
 		</section>
 	);
